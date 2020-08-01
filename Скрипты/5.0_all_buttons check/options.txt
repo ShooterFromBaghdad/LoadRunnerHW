@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Дмитрий\Documents\VuGen\Scripts\IBS\5.0_all_buttons check
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\дмитрий\documents\vugen\scripts\ibs\5.0_all_buttons check\\logfile.log
+c:\users\дмитрий\documents\vugen\scripts\ibs\5.0_all_buttons check\\combined_5.0_all_buttons check.c
+c:\users\дмитрий\documents\vugen\scripts\ibs\5.0_all_buttons check\\pre_cci.c

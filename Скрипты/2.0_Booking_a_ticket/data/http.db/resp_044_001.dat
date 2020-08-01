@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+		<info lang="ru">
+			
+		<region id="192" zoom="13" lat="56.129057" lon="40.406635">
+			<title>Владимир</title>
+		</region>
+	
+			<traffic/>
+			
+		<weather climate="1" region="192">
+			<source>mb3d</source>
+			
+		<day>
+			<title>Владимир</title>
+			<country>Россия</country>
+			<time_zone>Europe/Moscow</time_zone>
+			<summer-time>1</summer-time>
+			<sun_rise>04:02</sun_rise>
+			<sunset>20:46</sunset>
+			<daytime>d</daytime>
+			<date date="2020-07-21T00:00:00Z">
+				<day weekday="вт">21</day>
+				<month name="июля">7</month>
+				<year>2020</year>
+				<daytime>d</daytime>
+			</date>
+			
+		<day_part typeid="2" type="день">
+			<weather_type>облачно</weather_type>
+			<weather_code>overcast</weather_code>
+			<image>https://yastatic.net/weather/i/icons/blueye/24/ovc.png</image>
+			<image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_+18.png</image-v2>
+			<image-v3 size="48">https://yastatic.net/weather/i/icons/blueye/48/ovc.png</image-v3>
+			<image_number>5</image_number>
+			<wind_speed>3</wind_speed>
+			<wind_direction id="w">запад</wind_direction>
+			<dampness>79</dampness>
+			<hectopascal>987</hectopascal>
+			<torr>740</torr>
+			<pressure>740</pressure>
+			<temperature class_name="t18" color="F7F3D3">+18</temperature>
+			<time_zone>Europe/Moscow</time_zone>
+			<observation_time>13:01</observation_time>
+			<observation>2020-07-21T13:01:49</observation>
+		</day_part>
+	
+			
+		<day_part typeid="3" type="вечер">
+			<image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_-ra_+18.png</image-v2>
+			<image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc_-ra.png</image-v3>
+			
+			<temperature_from class_name="t16" color="F6F3D6">+16</temperature_from>
+			<temperature_to class_name="t18" color="F7F3D3">+18</temperature_to>
+		
+		</day_part>
+	
+
+		<day_part typeid="4" type="ночь">
+			<image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_-ra_+16.png</image-v2>
+			<image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc_-ra.png</image-v3>
+			
+			<temperature_from class_name="t16" color="F6F3D6">+15</temperature_from>
+			<temperature_to class_name="t16" color="F6F3D6">+16</temperature_to>
+		
+		</day_part>
+	
+
+		<day_part typeid="1" type="утро">
+			<image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_+20.png</image-v2>
+			<image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc.png</image-v3>
+			
+			<temperature_from class_name="t16" color="F6F3D6">+15</temperature_from>
+			<temperature_to class_name="t20" color="F8F4D0">+20</temperature_to>
+		
+		</day_part>
+	
+
+		<day_part typeid="2" type="день">
+			<image-v2 size="22x22">http://yandex.st/weather/v-1/i/icons/22x22/ovc_-ra_+20.png</image-v2>
+			<image-v3 size="30">https://yastatic.net/weather/i/icons/blueye/30/ovc_-ra.png</image-v3>
+			
+			<temperature_from class_name="t20" color="F8F4D0">+19</temperature_from>
+			<temperature_to class_name="t22" color="F8F1C8">+21</temperature_to>
+		
+		</day_part>
+	
+			
+			<night_short><temperature class_name="t16" color="F6F3D6">+15</temperature></night_short>,
+			<tomorrow><temperature class_name="t22" color="F8F1C8">+21</temperature></tomorrow>
+		
+		</day>
+	
+			<url slug="vladimir">http://pogoda.yandex.ru/vladimir/</url>
+		</weather>
+	
+		</info>
+	

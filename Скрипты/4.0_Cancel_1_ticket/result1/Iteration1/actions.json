@@ -1,0 +1,81 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t2.inf",
+                "time": 1596214407499
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t3.inf",
+                "time": 1596214407912
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t4.inf",
+                "time": 1596214408338
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Submit Data: itinerary.pl",
+                "infFile": "t5.inf",
+                "time": 1596214408506
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: Home Button",
+                "infFile": "t6.inf",
+                "time": 1596214408781
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "tr_home_page",
+                "rawStartTime": 1596214407021,
+                "rawEndTime": 1596214407501,
+                "thinkTime": 0.0,
+                "wastedTime": 0.22780632972717286
+            },
+            {
+                "transactionName": "tr_login",
+                "rawStartTime": 1596214407503,
+                "rawEndTime": 1596214407914,
+                "thinkTime": 0.0,
+                "wastedTime": 0.10499238967895508
+            },
+            {
+                "transactionName": "tr_itinerary_button",
+                "rawStartTime": 1596214407916,
+                "rawEndTime": 1596214408344,
+                "thinkTime": 0.0,
+                "wastedTime": 0.09743833541870117
+            },
+            {
+                "transactionName": "tr_cancel_ticket",
+                "rawStartTime": 1596214408346,
+                "rawEndTime": 1596214408507,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04127621650695801
+            },
+            {
+                "transactionName": "tr_home_button",
+                "rawStartTime": 1596214408511,
+                "rawEndTime": 1596214408783,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06803750991821289
+            },
+            {
+                "transactionName": "tr_main_cancel_1_ticket",
+                "rawStartTime": 1596214407018,
+                "rawEndTime": 1596214408785,
+                "thinkTime": 0.0,
+                "wastedTime": 0.53955078125
+            }
+        ]
+    }
+]

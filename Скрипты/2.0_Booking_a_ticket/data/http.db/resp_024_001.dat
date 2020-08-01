@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+		<quotes region="225">
+			<quote id="1" name="USD ЦБ РФ">
+				<value>71.9628</value>
+				<change>0.2489</change>
+				<changeprcnt>0.35</changeprcnt>
+				
+			<tomorrow>70.9668</tomorrow>
+			<tomorrowchange>-0.9960</tomorrowchange>
+			<tomorrowchangeprcnt>-1.38</tomorrowchangeprcnt>
+		
+			</quote>
+		</quotes>
+	

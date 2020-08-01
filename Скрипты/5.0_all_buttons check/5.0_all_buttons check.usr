@@ -1,0 +1,68 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=5.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=2020
+MinorVersion=0
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=2020.0.0.0
+DFERebrandFlag=Done
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=2020.0.0.0
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=ru-RU
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="tr_main_check_all_buttons__*delimiter*__tr_home_page__*delimiter*__tr_login__*delimiter*__tr_flights_button__*delimiter*__tr_itinerary_button__*delimiter*__tr_home_button__*delimiter*__tr_signOff"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+tr_main_check_all_buttons=
+tr_home_page=
+tr_login=
+tr_flights_button=
+tr_itinerary_button=
+tr_home_button=
+tr_signOff=

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:dlna="urn:schemas-dlna-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <device>
+    <deviceType>urn:dial-multiscreen-org:service:dial:1</deviceType>
+    <friendlyName>[LG] webOS TV UJ634V</friendlyName>
+    <manufacturer>LG Electronics</manufacturer>
+    <manufacturerURL>http://www.lge.com</manufacturerURL>
+    <modelDescription></modelDescription>
+    <modelName>LG Smart TV</modelName>
+    <modelURL>http://www.lge.com</modelURL>
+    <modelNumber>WEBOS</modelNumber>
+    <serialNumber></serialNumber>
+    <UDN>uuid:d5efb14e-5ad0-4ea1-9fe3-52802e84d977</UDN>
+    <serviceList>
+      <service>
+        <serviceType>urn:dial-multiscreen-org:service:dial:1</serviceType>
+        <serviceId>urn:dial-multiscreen-org:serviceId:dial</serviceId>
+        <SCPDURL>/WebOS_Dial/d5efb14e-5ad0-4ea1-9fe3-52802e84d977/scpd.xml</SCPDURL>
+        <controlURL>/WebOS_Dial/d5efb14e-5ad0-4ea1-9fe3-52802e84d977/control.xml</controlURL>
+        <eventSubURL>/WebOS_Dial/d5efb14e-5ad0-4ea1-9fe3-52802e84d977/event.xml</eventSubURL>
+      </service>
+    </serviceList>
+  </device>
+</root>
