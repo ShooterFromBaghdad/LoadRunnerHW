@@ -6,7 +6,7 @@ Action()
 
 	lr_start_transaction("tr_home_page");
 
-	web_set_sockets_option("SSL_VERSION", "AUTO");
+	web_set_sockets_option("SSL_VERSION", "TLS");
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"none");
@@ -23,16 +23,12 @@ Action()
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
 
-/*Correlation comment - Do not change!  Original value='129244.105872823zztHQQDpzQfiDDDDDQiiHpQzcVHf' Name ='userSession' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=userSession",
-		"TagName=input",
-		"Extract=value",
-		"Name=userSession",
-		"Type=hidden",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		"RequestUrl=*/nav.pl*",
+	lr_save_string("jojo", "login");
+	lr_save_string("bean", "password");
+
+	web_reg_save_param("userSession",
+		"LB/IC=name=\"userSession\" value=\"",
+		"RB=\"/>",
 		LAST);
 
 	web_url("WebTours", 
@@ -101,10 +97,11 @@ Action()
 		"Text/IC=Flights List",
 		LAST);
 	
+	// отлов первой части id
 	web_reg_save_param_ex(
 		"ParamName=FlightsID",
 		"LB=name=\"flightID\" value=\"",
-		"RB=\"  />",
+		"RB=-",
 		"Ordinal=1",
 		SEARCH_FILTERS,
 		LAST);
@@ -132,25 +129,35 @@ Action()
 
 	lr_think_time(28);
 	
-	web_reg_find("Fail=NotFound",
-		"Text/IC=Flights List",
+	web_reg_find("Fail=Found",
+	             lr_eval_string("Text/IC={FlightsID}"),
 		LAST);
 
-	web_submit_data("itinerary.pl",
-		"Action=http://localhost:1080/cgi-bin/itinerary.pl",
-		"Method=POST",
-		"TargetFrame=",
-		"RecContentType=text/html",
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl",
-		"Snapshot=t4.inf",
-		"Mode=HTML",
-		ITEMDATA,
-		"Name=1", "Value=on", ENDITEM,
-		"Name=flightID", "Value={FlightsID}", ENDITEM,
-		"Name=removeFlights.x", "Value=76", ENDITEM,
-		"Name=removeFlights.y", "Value=7", ENDITEM,
-		"Name=.cgifields", "Value=1", ENDITEM,
-		LAST);
+//	web_submit_data("itinerary.pl",
+//		"Action=http://localhost:1080/cgi-bin/itinerary.pl",
+//		"Method=POST",
+//		"TargetFrame=",
+//		"RecContentType=text/html",
+//		"Referer=http://localhost:1080/cgi-bin/itinerary.pl",
+//		"Snapshot=t4.inf",
+//		"Mode=HTML",
+//		ITEMDATA,
+//		"Name=1", "Value=on", ENDITEM,
+//		"Name=flightID", "Value={FlightsID}", ENDITEM,
+//		"Name=removeFlights.x", "Value=76", ENDITEM,
+//		"Name=removeFlights.y", "Value=7", ENDITEM,
+//		"Name=.cgifields", "Value=1", ENDITEM,
+//		LAST);
+
+	
+	web_submit_form("itinerary.pl", 
+    "Snapshot=t100.inf", 
+    ITEMDATA, 
+    "Name=1", "Value=on", ENDITEM,  
+    "Name=removeFlights.x", "Value=72", ENDITEM, 
+    "Name=removeFlights.y", "Value=1", ENDITEM, 
+    LAST);
+
 
 	lr_end_transaction("tr_cancel_ticket",LR_AUTO);
 

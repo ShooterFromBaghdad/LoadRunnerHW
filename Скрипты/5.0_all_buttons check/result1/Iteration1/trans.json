@@ -1,0 +1,37 @@
+[
+    {
+        "transactionName": "tr_home_page",
+        "rawStartTime": 1596473726419,
+        "rawEndTime": 1596473726850
+    },
+    {
+        "transactionName": "tr_login",
+        "rawStartTime": 1596473726853,
+        "rawEndTime": 1596473727195
+    },
+    {
+        "transactionName": "tr_flights_button",
+        "rawStartTime": 1596473727197,
+        "rawEndTime": 1596473727486
+    },
+    {
+        "transactionName": "tr_itinerary_button",
+        "rawStartTime": 1596473727488,
+        "rawEndTime": 1596473727787
+    },
+    {
+        "transactionName": "tr_home_button",
+        "rawStartTime": 1596473727790,
+        "rawEndTime": 1596473728113
+    },
+    {
+        "transactionName": "tr_signOff",
+        "rawStartTime": 1596473728117,
+        "rawEndTime": 1596473728391
+    },
+    {
+        "transactionName": "tr_main_check_all_buttons",
+        "rawStartTime": 1596473726416,
+        "rawEndTime": 1596473728394
+    }
+]

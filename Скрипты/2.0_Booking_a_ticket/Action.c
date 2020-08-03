@@ -5,7 +5,7 @@ Action()
 	
 	lr_start_transaction("tr_home_page");
 
-	web_set_sockets_option("SSL_VERSION", "AUTO");
+	web_set_sockets_option("SSL_VERSION", "TLS");
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"none");
@@ -22,16 +22,21 @@ Action()
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
 
-/*Correlation comment - Do not change!  Original value='129229.374159579zztHcDfpQDDDDDDDDQiiDptVfz' Name ='userSession' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=userSession",
-		"TagName=input",
-		"Extract=value",
-		"Name=userSession",
-		"Type=hidden",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		"RequestUrl=*/nav.pl*",
+///*Correlation comment - Do not change!  Original value='129229.374159579zztHcDfpQDDDDDDDDQiiDptVfz' Name ='userSession' Type ='ResponseBased'*/
+//	web_reg_save_param_attrib(
+//		"ParamName=userSession",
+//		"TagName=input",
+//		"Extract=value",
+//		"Name=userSession",
+//		"Type=hidden",
+//		SEARCH_FILTERS,
+//		"IgnoreRedirections=No",
+//		"RequestUrl=*/nav.pl*",
+//		LAST);
+
+	web_reg_save_param("userSession",
+		"LB/IC=name=\"userSession\" value=\"",
+		"RB=\"/>",
 		LAST);
 
 	web_url("WebTours", 
@@ -118,6 +123,11 @@ Action()
 	web_reg_find("Search=Body",
 		"Text=Flight departing from <B>{Cities}</B> to <B>{Cities2}</B> on <B>{departDate}</B>");
 	
+	web_reg_save_param("outboundFlight",
+		"LB/IC=name=\"outboundFlight\" value=\"",
+		"RB/IC=\"" ,
+		LAST);
+	
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
@@ -160,12 +170,10 @@ Action()
 //		SEARCH_FILTERS,
 //		LAST);
 	
-//сделал обе корреляции, тыкал разные формы строки, все равно читает ее просто как стринг, а не как параметр
-	
-	web_reg_save_param("outboundFlight",
-		"LB/IC=name=\"outboundFlight\" value=\"",
-		"RB/IC=\"" ,
-		LAST);
+//	web_reg_save_param("outboundFlight",
+//		"LB/IC=name=\"outboundFlight\" value=\"",
+//		"RB/IC=\"" ,
+//		LAST);
 
 	web_submit_data("reservations.pl_2",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",
@@ -204,10 +212,14 @@ Action()
 		"Text/IC=Thank you for booking through Web Tours",
 		LAST);
 	
-//	web_reg_find("Fail=NotFound",
-//		"Text/IC=A {seatType} Class ticket from {Cities} to {Cities2}",
-//		LAST);
-// не работает, т.к. outbound не проходит корреляцию, и в конце в форму уходит тот, что был при записи
+	web_reg_find("Fail=NotFound",
+		"Text/IC=A {seatType} Class ticket",
+		LAST);
+	
+	web_reg_find("Fail=NotFound",
+		"Text/IC=from {Cities} to {Cities2}",
+		LAST);
+
 
 	web_submit_data("reservations.pl_3",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",

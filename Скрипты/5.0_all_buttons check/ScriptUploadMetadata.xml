@@ -21,6 +21,7 @@
     <FileEntry Name="5.0_all_buttons check.ci" Filter="1" />
     <FileEntry Name="5.0_all_buttons check.prm" Filter="1" />
     <FileEntry Name="5.0_all_buttons check.prm.bak" Filter="1" />
+    <FileEntry Name="5.0_all_buttons check.sdf" Filter="1" />
     <FileEntry Name="5.prm.bak" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />

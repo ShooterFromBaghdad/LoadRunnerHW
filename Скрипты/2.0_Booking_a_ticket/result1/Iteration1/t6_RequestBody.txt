@@ -1,2 +1,4 @@
-"outboundFlight=%7BoutboundFlight%7D&numPassengers=1&advanceDiscount=0&seatType=Business&seatPr"
-"ef=Window&reserveFlights.x=51&reserveFlights.y=9"
+"firstName=Jojo&lastName=Bean&address1=San+Francisco&address2=Zurich&pass1=Jojo+Bean&creditCard"
+"=1234567890&expDate=9&oldCCOption=&numPassengers=1&seatType=Coach&seatPref=None&outboundFlight"
+"=690%3B376%3B03%2F08%2F2020&advanceDiscount=1&returnFlight=&JSFormSubmit=off&buyFlights.x=44&b"
+"uyFlights.y=5&.cgifields=saveCC"

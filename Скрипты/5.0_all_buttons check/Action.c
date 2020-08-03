@@ -4,7 +4,7 @@ Action()
 
 	lr_start_transaction("tr_home_page");
 
-	web_set_sockets_option("SSL_VERSION", "AUTO");
+	web_set_sockets_option("SSL_VERSION", "TLS");
 
 	web_add_auto_header("Sec-Fetch-Site", 
 		"none");
@@ -21,16 +21,21 @@ Action()
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
 
-/*Correlation comment - Do not change!  Original value='129244.53981369zztiAVzpAVzzzzzHDQiiipAQzV' Name ='userSession' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=userSession",
-		"TagName=input",
-		"Extract=value",
-		"Name=userSession",
-		"Type=hidden",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		"RequestUrl=*/nav.pl*",
+///*Correlation comment - Do not change!  Original value='129244.53981369zztiAVzpAVzzzzzHDQiiipAQzV' Name ='userSession' Type ='ResponseBased'*/
+//	web_reg_save_param_attrib(
+//		"ParamName=userSession",
+//		"TagName=input",
+//		"Extract=value",
+//		"Name=userSession",
+//		"Type=hidden",
+//		SEARCH_FILTERS,
+//		"IgnoreRedirections=No",
+//		"RequestUrl=*/nav.pl*",
+//		LAST);
+
+	web_reg_save_param("userSession",
+		"LB/IC=name=\"userSession\" value=\"",
+		"RB=\"/>",
 		LAST);
 
 	web_url("WebTours", 

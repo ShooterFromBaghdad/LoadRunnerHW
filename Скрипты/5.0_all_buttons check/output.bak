@@ -1,4 +1,4 @@
-Virtual User Script started at: 31.07.2020 20:05:01
+Virtual User Script started at: 01.08.2020 14:12:44
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -33,8 +33,8 @@ Action.c(36): Found resource "http://localhost:1080/WebTours/images/webtours.png
 Action.c(36): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(36): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(36): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
-Action.c(36): web_url("WebTours") was successful, 10079 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(46): Notify: Transaction "tr_home_page" ended with a "Pass" status (Duration: 0.4817 Wasted Time: 0.2442).
+Action.c(36): web_url("WebTours") was successful, 10078 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(46): Notify: Transaction "tr_home_page" ended with a "Pass" status (Duration: 0.5236 Wasted Time: 0.2641).
 Action.c(48): Notify: Transaction "tr_login" started.
 Action.c(50): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
 Action.c(50): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
@@ -59,7 +59,7 @@ Action.c(69): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(69): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(69): Registered web_reg_find successful for "Text=User password was correct" (count=1)  	[MsgId: MMSG-26364]
 Action.c(69): web_submit_data("login.pl") was successful, 5779 body bytes, 2031 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(86): Notify: Transaction "tr_login" ended with a "Pass" status (Duration: 0,3807 Wasted Time: 0,1033).
+Action.c(86): Notify: Transaction "tr_login" ended with a "Pass" status (Duration: 0,3588 Wasted Time: 0,1003).
 Action.c(88): Notify: Transaction "tr_flights_button" started.
 Action.c(90): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
 Action.c(90): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
@@ -77,8 +77,8 @@ Action.c(102): Resource "http://localhost:1080/WebTours/images/signoff.gif" is i
 Action.c(102): Found resource "http://localhost:1080/WebTours/images/button_next.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
 Action.c(102): Registered web_reg_find successful for "Text=Flight Selections" (count=1)  	[MsgId: MMSG-26364]
 Action.c(102): web_url("Search Flights Button") was successful, 8516 body bytes, 1616 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(112): Notify: Transaction "tr_flights_button" ended with a "Pass" status (Duration: 0.3777 Wasted Time: 0.1074).
-Action.c(114): Notify: Transaction "tr_itinerary_button" started.
+Action.c(112): Notify: Transaction "tr_flights_button" ended with a "Pass" status (Duration: 0.2988 Wasted Time: 0.0785).
+Action.c(114): Notify: Transaction "tr_itirenary_button" started.
 Action.c(116): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
 Action.c(116): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
 Action.c(116): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
@@ -97,8 +97,8 @@ Action.c(126): Resource "http://localhost:1080/WebTours/images/signoff.gif" is i
 Action.c(126): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
 Action.c(126): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
 Action.c(126): Registered web_reg_find successful for "Text=Flights List" (count=1)  	[MsgId: MMSG-26364]
-Action.c(126): web_url("Itinerary Button") was successful, 15971 body bytes, 1616 header bytes, 51 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(136): Notify: Transaction "tr_itinerary_button" ended with a "Pass" status (Duration: 0.3469 Wasted Time: 0.0737).
+Action.c(126): web_url("Itinerary Button") was successful, 28316 body bytes, 1616 header bytes, 75 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(136): Notify: Transaction "tr_itirenary_button" ended with a "Pass" status (Duration: 0,3419 Wasted Time: 0,0804).
 Action.c(138): Notify: Transaction "tr_home_button" started.
 Action.c(140): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
 Action.c(140): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
@@ -115,8 +115,8 @@ Action.c(152): Resource "http://localhost:1080/WebTours/images/in_home.gif" is i
 Action.c(152): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(152): Registered web_reg_find successful for "Text=Welcome to Web Tours" (count=1)  	[MsgId: MMSG-26364]
 Action.c(152): web_url("Home Button") was successful, 2996 body bytes, 698 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(162): Notify: Transaction "tr_home_button" ended with a "Pass" status (Duration: 0,3160 Wasted Time: 0,1022).
-Action.c(164): Notify: Transaction "signOff" started.
+Action.c(162): Notify: Transaction "tr_home_button" ended with a "Pass" status (Duration: 0,3000 Wasted Time: 0,0890).
+Action.c(164): Notify: Transaction "tr_signOff" started.
 Action.c(166): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
 Action.c(166): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
 Action.c(166): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
@@ -128,9 +128,9 @@ Action.c(174): Detected non-resource "http://localhost:1080/WebTours/home.html" 
 Action.c(174): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
 Action.c(174): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(174): Registered web_reg_find successful for "Text= A Session ID has been created and loaded" (count=1)  	[MsgId: MMSG-26364]
-Action.c(174): web_url("SignOff Button") was successful, 2172 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(184): Notify: Transaction "signOff" ended with a "Pass" status (Duration: 0,3219 Wasted Time: 0,0935).
-Action.c(186): Notify: Transaction "tr_main_check_all_buttons" ended with a "Pass" status (Duration: 2,2412 Wasted Time: 0,7242).
+Action.c(174): web_url("SignOff Button") was successful, 2175 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(184): Notify: Transaction "tr_signOff" ended with a "Pass" status (Duration: 0,3061 Wasted Time: 0,1016).
+Action.c(186): Notify: Transaction "tr_main_check_all_buttons" ended with a "Pass" status (Duration: 2,1444 Wasted Time: 0,7138).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...
