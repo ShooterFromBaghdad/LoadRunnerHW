@@ -1,4 +1,4 @@
-"firstName=Jojo&lastName=Bean&address1=San+Francisco&address2=Zurich&pass1=Jojo+Bean&creditCard"
-"=1234567890&expDate=9&oldCCOption=&numPassengers=1&seatType=Coach&seatPref=None&outboundFlight"
-"=690%3B376%3B03%2F08%2F2020&advanceDiscount=1&returnFlight=&JSFormSubmit=off&buyFlights.x=44&b"
-"uyFlights.y=5&.cgifields=saveCC"
+"firstName=Jojo&lastName=Bean&address1=Paris&address2=London&pass1=Jojo+Bean&creditCard=1234567"
+"890&expDate=8&oldCCOption=&numPassengers=1&seatType=Business&seatPref=None&outboundFlight=420%"
+"3B157%3B05%2F08%2F2020&advanceDiscount=1&returnFlight=&JSFormSubmit=off&buyFlights.x=44&buyFli"
+"ghts.y=5&.cgifields=saveCC"

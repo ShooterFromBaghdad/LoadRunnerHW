@@ -5,22 +5,22 @@
         <Subsections />
         <Entries>
           <Entry key="ElapsedTime">
-            <double>2.7526169</double>
+            <double>12.080152799999999</double>
           </Entry>
           <Entry key="StartedAt">
-            <dateTime>2020-08-03T19:29:43.2447974+03:00</dateTime>
+            <dateTime>2020-08-05T19:17:04.9087488+03:00</dateTime>
           </Entry>
           <Entry key="EndedAt">
-            <dateTime>2020-08-03T19:29:45.9974143+03:00</dateTime>
+            <dateTime>2020-08-05T19:17:16.9889016+03:00</dateTime>
           </Entry>
           <Entry key="ReplayStatus">
-            <LastReplayRunStatus>Passed</LastReplayRunStatus>
+            <LastReplayRunStatus>Failed</LastReplayRunStatus>
           </Entry>
           <Entry key="NumberOfReplayErrors">
-            <int>0</int>
+            <int>1</int>
           </Entry>
           <Entry key="NumberOfReplayCriticalErrors">
-            <int>0</int>
+            <int>1</int>
           </Entry>
           <Entry key="NumberOfCompilationErrors">
             <int>0</int>

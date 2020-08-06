@@ -54,7 +54,7 @@ vuser_end=cci
 [TransactionsOrder]
 Order="tr_main_cancel_1_ticket__*delimiter*__tr_home_page__*delimiter*__tr_login__*delimiter*__tr_itinerary_button__*delimiter*__tr_cancel_ticket__*delimiter*__tr_home_button"
 [StateManagement]
-LastReplayStatus=1
+LastReplayStatus=2
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
