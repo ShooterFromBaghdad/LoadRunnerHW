@@ -1,32 +1,22 @@
 [
     {
         "transactionName": "tr_home_page",
-        "rawStartTime": 1596472183698,
-        "rawEndTime": 1596472184322
+        "rawStartTime": 1596644225310,
+        "rawEndTime": 1596644225982
     },
     {
         "transactionName": "tr_login",
-        "rawStartTime": 1596472184338,
-        "rawEndTime": 1596472184776
+        "rawStartTime": 1596644225998,
+        "rawEndTime": 1596644231466
     },
     {
         "transactionName": "tr_itinerary_button",
-        "rawStartTime": 1596472184791,
-        "rawEndTime": 1596472185200
-    },
-    {
-        "transactionName": "tr_cancel_ticket",
-        "rawStartTime": 1596472185216,
-        "rawEndTime": 1596472185466
-    },
-    {
-        "transactionName": "tr_home_button",
-        "rawStartTime": 1596472185482,
-        "rawEndTime": 1596472185872
+        "rawStartTime": 1596644231482,
+        "rawEndTime": 1596644236849
     },
     {
         "transactionName": "tr_main_cancel_1_ticket",
-        "rawStartTime": 1596472183683,
-        "rawEndTime": 1596472185888
+        "rawStartTime": 1596644225296,
+        "rawEndTime": 1596644236849
     }
 ]

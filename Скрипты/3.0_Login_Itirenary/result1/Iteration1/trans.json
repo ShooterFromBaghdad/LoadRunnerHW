@@ -1,22 +1,22 @@
 [
     {
         "transactionName": "tr_home_page",
-        "rawStartTime": 1596473737743,
-        "rawEndTime": 1596473738197
+        "rawStartTime": 1596549403966,
+        "rawEndTime": 1596549404529
     },
     {
         "transactionName": "tr_login",
-        "rawStartTime": 1596473738199,
-        "rawEndTime": 1596473738514
+        "rawStartTime": 1596549404545,
+        "rawEndTime": 1596549409975
     },
     {
         "transactionName": "itinerary_button",
-        "rawStartTime": 1596473738516,
-        "rawEndTime": 1596473738820
+        "rawStartTime": 1596549409991,
+        "rawEndTime": 1596549415365
     },
     {
         "transactionName": "tr_main_login_itinerary",
-        "rawStartTime": 1596473737741,
-        "rawEndTime": 1596473738823
+        "rawStartTime": 1596549403952,
+        "rawEndTime": 1596549415381
     }
 ]

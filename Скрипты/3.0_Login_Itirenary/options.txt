@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IC:\Users\Дмитрий\Documents\VuGen\Scripts\IBS\3.0_Login_Itirenary
+-IC:\Users\Дмитрий\Documents\VuGen\Scripts\Скрипты\3.0_Login_Itirenary
 -IC:\Program Files (x86)\HPE\LoadRunner\include
--ec:\users\дмитрий\documents\vugen\scripts\ibs\3.0_login_itirenary\\logfile.log
-c:\users\дмитрий\documents\vugen\scripts\ibs\3.0_login_itirenary\\combined_3.0_Login_Itirenary.c
-c:\users\дмитрий\documents\vugen\scripts\ibs\3.0_login_itirenary\\pre_cci.c
+-ec:\users\дмитрий\documents\vugen\scripts\скрипты\3.0_login_itirenary\\logfile.log
+c:\users\дмитрий\documents\vugen\scripts\скрипты\3.0_login_itirenary\\combined_3.0_Login_Itirenary.c
+c:\users\дмитрий\documents\vugen\scripts\скрипты\3.0_login_itirenary\\pre_cci.c
